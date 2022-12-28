@@ -4,7 +4,7 @@ function createQuote(quote, callback) {
 }
 
 function logQuote(quote) {
-    console.log(quote + ' Yss..');
+    console.log(quote + ' Yes..');
 }
 
 createQuote(" you will getting better!", logQuote); // 1
