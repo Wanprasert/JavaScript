@@ -1,4 +1,8 @@
-let num1 = 1;
-let num2 = 1;
+function equation(num) {
+    total =eval(num);
+    return console.log(total);
+}
 
-console.log(num1 + num2);
+equation("1+1");
+equation("7*4-2");
+equation("1+1+1+1+1");
