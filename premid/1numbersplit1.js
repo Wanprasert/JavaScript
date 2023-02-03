@@ -6,20 +6,11 @@ numberSplit(-9) -> [-5,-4]
 */
 
 function numberSplit(n) {
-  if (n % 2 === 0) {
-      return [n/2, n/2];
-  } else {
-      let first = Math.floor(n/2);
-      let second = first + 1;
-      if (n < 0) {
-          first = -first;
-          second = -second;
-      }
-      return [first, second];
-  }
+ if (n === 0) return [0, 0];
+ let split = Math.ceil(n / 2);
+ return [Math.min(split, n - split), Math.max(split, n - split)];
 }
-
-console.log(numberSplit(4)); // [2, 2]
-console.log(numberSplit(10)); // [5, 5]
-console.log(numberSplit(11)); // [5, 6]
-console.log(numberSplit(-9)); // [-5, -4]
+console.log(numberSplit(4)); // Output: [2, 2]
+console.log(numberSplit(10)); // Output: [5, 5]
+console.log(numberSplit(11)); // Output: [5, 6]
+console.log(numberSplit(-9)); // Output: [-5, -4]
