@@ -1,0 +1,25 @@
+{
+    "name": "noderest",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts"{
+        "format": "prettier --write *.js",
+        "start": "node src/index.js",
+        "dev": "nodeman src/index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Wanprasert/NodeREST.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Wanprasert/NodeREST/issues"
+    },
+
+
+
+
+}
